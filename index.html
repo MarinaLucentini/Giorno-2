@@ -8,67 +8,90 @@
   </head>
   <body>
     <header>
-      <div id="intestazione">
-        <img src="assets/img/logo.svg" alt="logo" />
-        <h1>Epicode - il blog dei developers</h1>
-      </div>
+        <div id="intestazione">
+            <div id="logo">
+                <a href="#"><img src="assets/img/logo.svg" alt="logo" /></a>
+            </div>
+           
+           <a href="#"><h1>Epicode - il blog dei developers</h1></a> 
+           </div>
       <!-- fine intestazione -->
       <nav>
-        <ul>
-          <li>Home</li>
-          <li>Articoli</li>
-          <li>Lavora con noi</li>
-        </ul>
+       <ul id="menu">
+        <li>
+           
+                <li><a href="#">
+                 
+                 Home
+              </a></li>
+                
+               <li> <a href="#">
+                  Articoli</a></li> 
+              
+                <li><a href="#">Lavora con noi</a></li>
+               
+              
+        </li>
+        
+       </ul>
+       
       </nav>
       <!-- fine menu -->
     </header>
     <!-- fine header -->
     <main>
    <aside>
-    <form >
-        <h3>Vuoi rimenere sempre aggiornato su altre novità del blog?</h3>
-        <h4>Iscriviti alla nostra newsletter</h4>
-<fieldset>
-   
-    <label for="email"></label>
-    <input type="email" placeholder="inserisci la tua email" autofocus required>
-</fieldset>
-            
-          
-        <button>Invia</button>
-    </form>
-    <!-- fine form per newsletter -->
+
     
-        <h3>Articoli correlati</h3>
-        <div class="articoli correlati">
-           <a><h5>Validare il codice html</h5></a>
+        <h2>Articoli correlati</h2>
+       
+        <div class="articoli-correlati">
+           <a><h4>Validare il codice html</h4></a>
            <p>Categoria:<a>Develop</a></p> 
            <p>Data:<span>18-9-2020</span></p>
 
         </div>
-        <div class="articoli correlati">
-            <a><h5>Correggere la sintassi</h5></a>
+        <div class="articoli-correlati">
+            <a><h4>Correggere la sintassi</h4></a>
             <p>Categoria:<a>Develop</a></p> 
             <p>Data:<span>16-9-2020</span></p>
  
          </div>
-         <div class="articoli correlati">
-            <a><h5>Meno Kb nella pagina</h5></a>
+         <div class="articoli-correlati">
+            <a><h4>Meno Kb nella pagina</h4></a>
             <p>Categoria:<a>ottimizzazione</a></p> 
             <p>Data:<span>30-9-2020</span></p>
  
          </div>
+         <form >
+            <div id="intestazione-form">
+                <h4>Vuoi rimenere sempre aggiornato su altre novità del blog?</h4>
+                <h5>Iscriviti alla nostra newsletter</h5>
+               </div>   
+     <fieldset>
+       
+         <label for="email"></label>
+         <input type="email" placeholder="inserisci la tua email" autofocus required>
+         <button>Invia</button>
+     </fieldset>
+                 
+               
+             
+         </form>
+         <!-- fine form per newsletter -->
     
    </aside>
    <!-- fine sidebar -->
       <section>
         
             <!-- inizio articolo -->
+            <article>
+
          <div class="titolo">
             <h2>Come creare un tamplate per i post</h2>
-            <h3> Mario Rossi pubblicato il 25-10-2020</h3>
+            <h6> Mario Rossi pubblicato il 25-10-2020</h6>
          </div> 
-           <article>
+           <div class="sezione-articolo">
             <p>
                 La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni a tutte le pagine.
                     Le varie aree saranno quindi suddivise in: </p>
@@ -77,13 +100,15 @@
                         <li>Contenuti centrali variabili del tag &#60; main &#62;</li>
                         <li>Contenuti di fine pagina comuni del tag &#60; footer &#62;</li>
                     </ul>
-           </article> 
+           
+           </div>
+            
             
             <div class="titolo">
-                <h2>Formattazione del codice</h2>
+                <h4>Formattazione del codice</h4>
             </div>
                
-                <article >
+           <div class="sezione-articolo">
             <p>
                 Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:
             </p>
@@ -93,9 +118,9 @@
                 <li>Applicare gli stili CSS
                 </li>
             </ol>
-              </article>
+             
         <!-- fine prima parte articolo -->
-        <article>
+        
             <table>
                 <!-- inizio tabella -->
                 <thead>
@@ -144,6 +169,8 @@
    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/o5IUpJNcbLA?si=Ysf6xoUzLGQowlvu" title="YouTube video player" 
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen></iframe></div> 
+           </div>     
+          
         </article>
                
 
@@ -154,14 +181,20 @@
      
     </main>
     <!-- fine parte principale -->
+    <hr>
     <footer>
-       <p>Blog Epicode ©2023</p>
-       <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 -<address>via Luigi Einaudi 2 - Milano</address>. 
-        P.IVA 00112233. 
-    <a href="mailto:info@epicode.school">
-        info@epicode.school
-    </a>
-</p> 
+      <div id="copyright">
+         <p>Blog Epicode ©2023</p>
+    </div>
+    <div id="indirizzi">
+        <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 -<address>via Luigi Einaudi 2 - Milano</address> 
+            P.IVA 00112233. 
+        <a href="mailto:info@epicode.school">
+            info@epicode.school
+        </a>
+    </p> 
+    </div>
+      
     </footer>
     <!-- fine piè di pagina -->
   </body>
