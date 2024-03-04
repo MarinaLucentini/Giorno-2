@@ -22,36 +22,41 @@ h6 {
   margin-top: 0;
   margin-bottom: 0;
   color: #d1abfa;
+  margin: 1em;
 }
 h1 {
+  font-size: 4em;
+  display: inline;
+}
+h2 {
+  font-size: 2em;
+}
+h4 {
   font-size: 1.5em;
+}
+h6 {
+  font-size: 0.8em;
+  margin: 0;
 }
 a {
   text-decoration: none;
   display: inline;
+  color: whitesmoke;
 }
 /* parametri pag intera */
 
 header {
   background: linear-gradient(50deg, #2c0056, #b886ed);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  padding-top: 2em;
-}
-#intestazione {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  width: 75%;
-}
-#logo {
-  display: flex;
-}
 
-#logo img {
-  width: 50%;
+  width: 100%;
+  padding: 2em;
+}
+#titolo {
+  width: 100%;
+}
+#titolo img {
+  width: 15%;
+  margin-right: 5em;
 }
 /* fine intestazione, parte con il logo*/
 nav {
@@ -87,6 +92,7 @@ aside {
   align-items: center;
   width: 300px;
   justify-content: space-evenly;
+  text-align: center;
 }
 /* sidebar */
 form {
@@ -135,6 +141,17 @@ article {
 }
 table {
   border: 1px linear-gradient(50deg #2c0056 #d1abfa);
+  text-align: center;
+  margin: 1.5em;
+  border: 1px solid #b886ed;
+  box-shadow: 5px 10px #d1abfa;
+}
+caption {
+  margin: 1em;
+}
+th,
+td {
+  border: 1px solid #b886ed61;
 }
 /* fine articolo */
 footer {
